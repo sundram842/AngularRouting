@@ -1,0 +1,14 @@
+<a
+  [routerLink]="['/queryParamschild']"
+  [queryParams]="{ order: 'popular'}"
+>
+  Products
+</a>
+
+<a
+   [routerLink]="['/queryParamschild']"
+   [queryParams]="{ filter: 'new' }"
+   queryParamsHandling="merge"
+>
+  Users
+</a>

@@ -1,0 +1,14 @@
+<p>router-link works!</p>
+<th>ID</th>
+<th>First name</th>
+<th>Last name</th>
+<tr *ngFor="let lists of list">
+ <td>{{lists.id}}</td>
+ <td>{{lists.name}}</td>
+ <td>{{lists.lastName}}</td>
+ <td>
+    <a [routerLink]="['/edit',lists.id]">edit</a>
+ </td>
+ 
+
+</tr>
